@@ -1,7 +1,8 @@
 #  Responsive Calculator
 
 A modern and responsive calculator built using **HTML, CSS, and JavaScript**. It performs basic arithmetic operations with a clean, user-friendly interface and works smoothly across all devices.
-
+## 🌐 Live Demo
+[https://roomanhassan.github.io/calculator-web-app/](YOUR_LIVE_LINK_HERE)
 ## 🚀 Features
 
 - ➕ Addition
