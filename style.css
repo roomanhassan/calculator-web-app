@@ -1,0 +1,72 @@
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* ===== HEADING ===== */
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #030303;
+  margin-bottom: 20px;
+}
+
+/* ===== CALCULATOR WRAPPER ===== */
+.container {
+  background: #1c1c1e;
+  border-radius: 24px;
+  padding: 24px;
+  width: 340px;
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.35),
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* ===== DISPLAY ===== */
+.input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 300;
+  text-align: right;
+  padding: 10px 4px 24px;
+  letter-spacing: -1px;
+  caret-color: #f97316;
+  font-variant-numeric: tabular-nums;
+}
+
+.input::placeholder {
+  color: #3a3a3c;
+  font-size: 28px;
+}
+
+/* ===== BUTTON GRID ===== */
+.container > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.container > div:last-child {
+  margin-bottom: 0;
+}
